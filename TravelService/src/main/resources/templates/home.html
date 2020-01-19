@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+>
+<head>
+    <title>Travel Service</title>
+<!--    <link rel="stylesheet" type="text/css" href="styles/home.css">-->
+</head>
+<body>
+<main class="container">
+    <h1>Travel Service</h1>
+    <div>
+        <h2>Add new city</h2>
+        <input type="text" class="newCityName" id="newCityName" placeholder="name" required>
+        <input type="text" class="newCityDescription" id="newCityDescription" placeholder="description" required>
+        <button class="btn-add" id="btn-add">Add</button>
+    </div>
+    <template id="city-item-template">
+        <div class="city" id="city">
+            <span class="id" id="id"></span>
+            <span class="name" id="name"></span>
+            <span class="description" id="description"></span>
+            <button class="btn-delete" id="btn-delete">Delete</button>
+            <button class="btn-update" id="btn-update">Update</button>
+        </div>
+    </template>
+    <h2>Cities</h2>
+    <section class="city-list" id="city-list">
+    </section>
+</main>
+<script src="scripts/home.js"></script>
+</body>
