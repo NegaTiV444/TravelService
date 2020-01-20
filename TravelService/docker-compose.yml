@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+
+  mysql:
+    image: mysql
+    volumes:
+      - ./:/app/
+    command: --init-file /app/init.sql
+    restart: "no"
+    ports:
+      - "3306:3306"
+    networks:
+      - backend
+    environment:
+      MYSQL_ROOT_PASSWORD: toor
+    container_name: mysql
+
+  agario-app:
+    image: negativ444/travel-service-maven
+    command: java -jar -Dspring.profiles.active=prod /app/target/travelService-1.0.0.RELEASE.jar
+    depends_on:
+      - mysql
+    restart: on-failure
+    networks:
+      - frontend
+      - backend
+    ports:
+      - "80:8080"
+    container_name: travelService-app
+
+
+networks:
+  frontend:
+  backend:
+    internal: true
