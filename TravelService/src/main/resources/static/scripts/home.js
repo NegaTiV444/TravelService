@@ -19,8 +19,12 @@ async function addClick() {
         body: JSON.stringify(city)
     });
     let jsonData = await response.json();
-    cities.set(jsonData.id, jsonData);
-    printCities();
+    if (jsonData.error == null) {
+        cities.set(jsonData.id, jsonData);
+        printCities();
+    } else {
+        alert(jsonData.message);
+    }
 }
 
 async function updateCities(jsonData) {
@@ -78,7 +82,7 @@ async function updateClick(id) {
         body: JSON.stringify(city)
     });
     let jsonData = await response.json();
-    cities.set(jsonData.id, jsonData)
+    cities.set(jsonData.id, jsonData);
     printCities();
 }
 

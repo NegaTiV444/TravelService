@@ -16,6 +16,8 @@ import java.util.Properties;
 
 public class Bot extends TelegramLongPollingBot {
 
+    private final CityService cityService = CityService.getInstance();
+
     private static String USERNAME;
     private static String TOKEN;
 
@@ -65,6 +67,14 @@ public class Bot extends TelegramLongPollingBot {
                 case "/start":
                     sendMsg(message, "Hello");
                     break;
+                default:
+                    try {
+                        sendMsg(message, cityService.loadCityByName(message.getText()).getDescription());
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (NotFoundException ex) {
+                        sendMsg(message, ex.getMessage());
+                    }
             }
         }
     }
