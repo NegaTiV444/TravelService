@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40e4168f-802d-4661-b7cf-81033b5aae67" name="Default Changelist" comment="" />
+    <list default="true" id="bec5cfd4-3aab-4e87-953d-fd980fe9d885" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TelegramBot.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/Bot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/City.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/CityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bot.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/bot.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/Bot.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/City.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$SingletonHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -17,8 +41,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1WR00H3taqhPPTzavdAuKPYcu8X" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1WaxoAt2N5of6MYkFMQBiqWJSEx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -33,13 +59,24 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RunManager">
-    <configuration name="TelegramTravelBotApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="telegramTravelBot" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.negativ.telegramTravelBot.TelegramTravelBotApplication" />
+    <configuration name="Bot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.negativ.travelServiceTelegramBot.Bot" />
+      <module name="TelegramBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.negativ.travelServiceTelegramBot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Bot" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -58,14 +95,15 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="40e4168f-802d-4661-b7cf-81033b5aae67" name="Default Changelist" comment="" />
-      <created>1579096874364</created>
+      <changelist id="bec5cfd4-3aab-4e87-953d-fd980fe9d885" name="Default Changelist" comment="" />
+      <created>1579401678839</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579096874364</updated>
-      <workItem from="1579096879418" duration="998000" />
-      <workItem from="1579098237472" duration="1841000" />
-      <workItem from="1579397582532" duration="18000" />
+      <updated>1579401678839</updated>
+      <workItem from="1579401680252" duration="717000" />
+      <workItem from="1579402592556" duration="1016000" />
+      <workItem from="1579429304046" duration="2543000" />
+      <workItem from="1579486402264" duration="1298000" />
     </task>
     <servers />
   </component>
@@ -73,9 +111,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1579135398641">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1579488785886">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579135398641" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1579488785886" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1579488925728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579488925728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1579488925728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579488925728" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1579488925727">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579488925727" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1579488925728">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579488925728" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1579402942276">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1579402942276" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1579486399665">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579486399665" />
   </component>
 </project>
