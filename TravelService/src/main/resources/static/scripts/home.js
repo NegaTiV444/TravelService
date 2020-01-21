@@ -33,11 +33,11 @@ async function updateCities(jsonData) {
 }
 
 async function printCities() {
+    const recordsListBlock = document.getElementById('city-list');
+    recordsListBlock.innerHTML = '';
     if (cities.size > 0) {
         const cityBlock = createCityBlock();
         console.log(cityBlock);
-        const recordsListBlock = document.getElementById('city-list');
-        recordsListBlock.innerHTML = '';
         recordsListBlock.appendChild(cityBlock);
     }
 }

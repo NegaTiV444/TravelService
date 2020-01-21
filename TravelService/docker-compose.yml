@@ -17,7 +17,8 @@ services:
 
   agario-app:
     image: negativ444/travel-service-maven
-    command: java -jar -Dspring.profiles.active=prod /app/target/travelService-1.0.0.RELEASE.jar
+    command: bash -c "mvn package && java -jar -Dspring.profiles.active=prod /app/target/travelService-1.0.0.RELEASE.jar"
+
     depends_on:
       - mysql
     restart: on-failure
