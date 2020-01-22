@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec5cfd4-3aab-4e87-953d-fd980fe9d885" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/Bot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/CityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bot.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bot.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/Bot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/City.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$SingletonHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/NotFoundException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TravelService/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelService/deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +107,7 @@
       <workItem from="1579512296941" duration="2809000" />
       <workItem from="1579557171181" duration="699000" />
       <workItem from="1579573697631" duration="3997000" />
-      <workItem from="1579630077900" duration="6000000" />
+      <workItem from="1579630077900" duration="6596000" />
     </task>
     <servers />
   </component>
