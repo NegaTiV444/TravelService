@@ -1,0 +1,9 @@
+FROM maven
+MAINTAINER NegaTiV444
+
+ADD / /app
+WORKDIR /app
+
+RUN mvn package
+RUN java -jar /app/target/TravelServiceTelegramBot-1.0-RELEASE.jar
+

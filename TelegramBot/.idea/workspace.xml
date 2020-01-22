@@ -2,17 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec5cfd4-3aab-4e87-953d-fd980fe9d885" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/Bot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/Bot.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/CityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/CityService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/bot.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/bot.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bot.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/bot.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/bot.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/bot.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/Bot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/Bot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$SingletonHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$SingletonHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/City.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/City.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService$SingletonHandler.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/CityService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TravelService/src/main/java/com/negativ/travelService/data/CityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelService/src/main/java/com/negativ/travelService/data/CityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TravelService/src/main/java/com/negativ/travelService/web/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelService/src/main/java/com/negativ/travelService/web/CityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TravelService/src/main/resources/static/scripts/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelService/src/main/resources/static/scripts/home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/NotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/negativ/travelServiceTelegramBot/NotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TravelService/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelService/deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +58,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.BotRunner">
     <configuration name="Bot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.negativ.travelServiceTelegramBot.Bot" />
       <module name="TelegramBot" />
@@ -68,8 +72,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BotRunner" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="TelegramBot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.negativ.travelServiceTelegramBot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.negativ.travelServiceTelegramBot.BotRunner" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.BotRunner" />
         <item itemvalue="Application.Bot" />
       </list>
     </recent_temporary>
@@ -100,7 +118,10 @@
       <workItem from="1579402592556" duration="1016000" />
       <workItem from="1579429304046" duration="2543000" />
       <workItem from="1579486402264" duration="2248000" />
-      <workItem from="1579512296941" duration="2017000" />
+      <workItem from="1579512296941" duration="2809000" />
+      <workItem from="1579557171181" duration="699000" />
+      <workItem from="1579573697631" duration="3997000" />
+      <workItem from="1579630077900" duration="6000000" />
     </task>
     <servers />
   </component>
@@ -112,38 +133,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1579488785886" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1579518057059">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1579638131658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579518057059" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1579518057059">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579638131658" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1579638131658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579518057059" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1579518057059">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1579638131658" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1579638131658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579518057059" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1579518057059">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1579638131658" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1579638131658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579518057059" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1579518004007">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1579638131658" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1579519012060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579518004007" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1579518004006">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1579519012060" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1579519012060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579518004006" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1579518004006">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1579519012060" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1579519012060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579518004006" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1579518004007">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1579519012060" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1579519012060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579518004007" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1579519012060" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1579402942276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -152,21 +173,5 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1579514119394" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/CityService.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/negativ/travelServiceTelegramBot/CityService.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

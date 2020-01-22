@@ -1,51 +1,43 @@
 package com.negativ.travelServiceTelegramBot;
 
-import org.telegram.telegrambots.ApiContextInitializer;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
-import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Message;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-import org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 
+@Component
 public class Bot extends TelegramLongPollingBot {
 
-    private final CityService cityService = CityService.getInstance();
+    @Autowired
+    private CityService cityService;
 
-    private static String USERNAME;
-    private static String TOKEN;
+    @Value("${bot.token}")
+    private String token;
 
-    public static void main(String[] args) {
-        ApiContextInitializer.init();
-        TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
-        try {
-            Bot bot = new Bot();
-            if (bot.init()) {
-                telegramBotsApi.registerBot(bot);
-            } else
-                System.exit(1);
-        } catch (TelegramApiRequestException e) {
-            e.printStackTrace();
-        }
-    }
+    @Value("${bot.username}")
+    private String username;
 
-    public boolean init() {
-        Properties props = new Properties();
-        try {
-            props.load(new FileInputStream(new File("src/main/resources/bot.properties")));
-            USERNAME = props.getProperty("username");
-            TOKEN = props.getProperty("token");
-            return true;
-        } catch (IOException e) {
-            return false;
-        }
-    }
+
+
+//    public static void main(String[] args) {
+//        ApiContextInitializer.init();
+//        TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
+//        try {
+//            Bot bot = new Bot();
+//            if (bot.init()) {
+//                telegramBotsApi.registerBot(bot);
+//            } else
+//                System.exit(1);
+//        } catch (TelegramApiRequestException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
     public void sendMsg(Message message, String text) {
         SendMessage sendMessage = new SendMessage();
@@ -65,11 +57,13 @@ public class Bot extends TelegramLongPollingBot {
         if (message != null && message.hasText()) {
             switch (message.getText()) {
                 case "/start":
-                    sendMsg(message, "Hello");
+                case "/help":
+                    sendMsg(message, "Enter city name");
                     break;
                 default:
                     try {
-                        sendMsg(message, cityService.loadCityByName(message.getText()).getDescription());
+                        City city = cityService.loadCityByName(message.getText());
+                        sendMsg(message, city.getName() + ": " + city.getDescription());
                     } catch (IOException e) {
                         e.printStackTrace();
                     } catch (NotFoundException ex) {
@@ -81,11 +75,11 @@ public class Bot extends TelegramLongPollingBot {
 
     @Override
     public String getBotUsername() {
-        return USERNAME;
+        return username;
     }
 
     @Override
     public String getBotToken() {
-        return TOKEN;
+        return token;
     }
 }

@@ -1,43 +1,23 @@
 package com.negativ.travelServiceTelegramBot;
 
 import org.json.JSONObject;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.Properties;
 import java.util.Scanner;
 
+@Service
 public class CityService {
 
-    private String API_URL;
-
-    private static class SingletonHandler {
-        static final CityService INSTANCE = new CityService();
-    }
-
-    private CityService() {
-        init();
-    }
-
-    private void init() {
-        Properties props = new Properties();
-        try {
-            props.load(new FileInputStream(new File("src/main/resources/bot.properties")));
-            API_URL = props.getProperty("api.url");
-        } catch (IOException e) {
-        }
-    }
-
-    public static CityService getInstance() {
-        return CityService.SingletonHandler.INSTANCE;
-    }
+    @Value("${api.url}")
+    private String apiUrl;
 
     public City loadCityByName(String name) throws IOException, NotFoundException {
-        URL url = new URL("http://" + API_URL + "/api/city/" + name);
+        URL url = new URL("http://" + apiUrl + "/api/city/" + name);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         if (conn.getResponseCode() == 404) {
             throw new NotFoundException("City '" + name + "' not found");
@@ -55,5 +35,4 @@ public class CityService {
             return city;
         }
     }
-
 }
