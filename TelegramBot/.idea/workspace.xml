@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bec5cfd4-3aab-4e87-953d-fd980fe9d885" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../TravelService/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../TravelService/deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +108,7 @@
       <workItem from="1579512296941" duration="2809000" />
       <workItem from="1579557171181" duration="699000" />
       <workItem from="1579573697631" duration="3997000" />
-      <workItem from="1579630077900" duration="6596000" />
+      <workItem from="1579630077900" duration="7000000" />
     </task>
     <servers />
   </component>
